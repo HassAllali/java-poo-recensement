@@ -27,6 +27,23 @@ public class Application {
 	 * @param args arguments (non utilisés ici)
 	 */
 	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		Scanner scanner = new Scanner(System.in);
 
 		String filePath = ClassLoader.getSystemClassLoader().getResource("recensement.csv").getFile();
@@ -66,8 +83,30 @@ public class Application {
 				break;
 			case 4:
 				RecherchePopulationBorneService recherchePopBorne = new RecherchePopulationBorneService();
-				recherchePopBorne.traiter(recensement, scanner);
+				
+				
+				
+				
+				
+				
+				
+				try {
+					recherchePopBorne.traiter(recensement, scanner);
+					
+					
+				} catch (Exception e) {
+				System.err.println(e.getMessage());
+				}
+				
+				
+				
+				
+				
+				
+				
+			
 				break;
+				
 			case 5:
 				RechercheVillesPlusPeupleesDepartement rechercheVillesPlusPeupleesDepartement = new RechercheVillesPlusPeupleesDepartement();
 				rechercheVillesPlusPeupleesDepartement.traiter(recensement, scanner);
